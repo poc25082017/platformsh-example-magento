@@ -4,6 +4,8 @@ This is a no-thrills example of a minimal repository to deploy a Magento 2 Enter
 
 This example is based on using the Composer to build the site. You can see there is not much in terms of files committed to this repository.
 
+## Repository structure
+
 This is the whole layout of the repository (it will still make for a perfectly functional web site on https://platform.sh !)
 
 ```
@@ -29,3 +31,16 @@ needs, right?
 
 The ``composer.json`` will fetch the Magento 2.0 Enterprise Edition, and some configuration scripts to prepare your application
 for Platform.sh.
+
+## Get started
+
+Make sure you add your Magento credentials to the `auth.json` file and that those credentials can get you access to Magento Enterprise Edition. You can get those credentials in your [MagentoCommerce account](https://www.magentocommerce.com/magento-connect/customerdata/accessKeys/list/).
+
+```
+"http-basic": {
+      "repo.magento.com": {
+         "username": "<public-key>",
+         "password": "<private-key>"
+      }
+   }
+```
