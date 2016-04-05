@@ -7164,12 +7164,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/platformsh/platformsh-magento2-configuration.git",
-                "reference": "c81b21a023ff02b9cde3ee6855c8b0cdceb54783"
+                "reference": "4224da96ffb3b7b6646351a31439d5f2a00d5f83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/platformsh/platformsh-magento2-configuration/zipball/c81b21a023ff02b9cde3ee6855c8b0cdceb54783",
-                "reference": "c81b21a023ff02b9cde3ee6855c8b0cdceb54783",
+                "url": "https://api.github.com/repos/platformsh/platformsh-magento2-configuration/zipball/4224da96ffb3b7b6646351a31439d5f2a00d5f83",
+                "reference": "4224da96ffb3b7b6646351a31439d5f2a00d5f83",
                 "shasum": ""
             },
             "require": {
@@ -7189,7 +7189,7 @@
                 }
             ],
             "description": "Provides configuration to deploy a Magento 2 project on Platform.sh",
-            "time": "2016-03-29 20:34:02"
+            "time": "2016-04-01 21:30:20"
         },
         {
             "name": "psr/log",
