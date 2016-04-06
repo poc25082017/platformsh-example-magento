@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "374fa9845bbf2c768894c76f7ba194d8",
-    "content-hash": "50404e4139586788901ece7c29e1b557",
+    "hash": "c8b6be01cc28a499419c7408d82b1a1d",
+    "content-hash": "a5548be61b2242e8916f296fcb1e89d5",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -119,6 +119,50 @@
                 "package"
             ],
             "time": "2015-04-14 21:18:51"
+        },
+        {
+            "name": "cweagans/composer-patches",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "0d75c63b6de66144517a1da9084422b78c2ff251"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/0d75c63b6de66144517a1da9084422b78c2ff251",
+                "reference": "0d75c63b6de66144517a1da9084422b78c2ff251",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "time": "2016-02-29 03:45:02"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -242,6 +286,11 @@
                 "ext-imagick": "Use Image Magick >=3.0.0 as an optional alternative image processing library"
             },
             "type": "magento2-library",
+            "extra": {
+                "patches_applied": {
+                    "Fix the static assets front controller": "patches/fix-static-assets-controller.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Magento\\Framework\\": ""
@@ -7164,12 +7213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/platformsh/platformsh-magento2-configuration.git",
-                "reference": "4224da96ffb3b7b6646351a31439d5f2a00d5f83"
+                "reference": "4a060441a6ea1d02b1d7d78c7cbb8e8e4b1b4ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/platformsh/platformsh-magento2-configuration/zipball/4224da96ffb3b7b6646351a31439d5f2a00d5f83",
-                "reference": "4224da96ffb3b7b6646351a31439d5f2a00d5f83",
+                "url": "https://api.github.com/repos/platformsh/platformsh-magento2-configuration/zipball/4a060441a6ea1d02b1d7d78c7cbb8e8e4b1b4ac0",
+                "reference": "4a060441a6ea1d02b1d7d78c7cbb8e8e4b1b4ac0",
                 "shasum": ""
             },
             "require": {
@@ -7189,7 +7238,7 @@
                 }
             ],
             "description": "Provides configuration to deploy a Magento 2 project on Platform.sh",
-            "time": "2016-04-01 21:30:20"
+            "time": "2016-04-06 11:09:59"
         },
         {
             "name": "psr/log",

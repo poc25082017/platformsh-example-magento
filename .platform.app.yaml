@@ -45,6 +45,16 @@ web:
                     allow: true
                 /robots\.txt$:
                     allow: true
+        "/media":
+            root: "pub/media"
+            allow: true
+            scripts: false
+            passthru: "/index.php"
+        "/static":
+            root: "pub/static"
+            allow: true
+            scripts: false
+            passthru: "/front-static.php"
 
 
 # The size of the persistent disk of the application (in MB).
@@ -54,7 +64,8 @@ disk: 2048
 mounts:
     "var": "shared:files/var"
     "app/etc": "shared:files/etc"
-    "pub": "shared:files/pub"
+    "pub/media": "shared:files/media"
+    "pub/static": "shared:files/static"
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
