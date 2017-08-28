@@ -1,5 +1,6 @@
 # Magento 2.0 Enterprise Edition
 
+# MANU 
 This is a no-thrills example of a minimal repository to deploy a Magento 2 Enterprise Edition instance on Platform.sh.
 
 This example is based on using the Composer to load up dependencies and get the Magento vendor folders.
